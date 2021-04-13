@@ -125,6 +125,13 @@ header {
             background-image: url(../images/2-4.png);
             background-size: cover;
             margin: 1px 0 0 1px;
+
+            iframe {
+                top: 50%;
+                position: absolute;
+                transform: translateY(-50%);
+                left: 1rem;
+            }
         }
     }
 
