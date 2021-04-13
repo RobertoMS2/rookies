@@ -56,33 +56,33 @@ header {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
 
-        .b0-0 {
+        .box--row0-col0 {
             background-color: $brown-bg;
         }
 
-        .b0-1 {
+        .box--row0-col1 {
             background-color: $light-brown-bg;
         }
 
-        .b0-2 {
+        .box--row0-col2 {
             background-image: url(../images/0-2.png);
             background-size: cover;
             margin: 0 1px 1px 1px;
         }
 
-        .b0-3 {
+        .box--row0-col3 {
             background-image: url(../images/0-3.png);
             background-size: cover;
             margin: 0 1px 1px 1px;
         }
 
-        .b0-4 {
+        .box--row0-col4 {
             background-image: url(../images/0-4.png);
             background-size: cover;
             margin: 0 0 1px 1px;
         }
 
-        .b1-0 {
+        .box--row1-col0 {
             background-image: url(../images/logo.png);
             background-size: cover;
             grid-column-start: 1;
@@ -91,37 +91,37 @@ header {
             grid-row-end: 4;
         }
 
-        .b1-2 {
+        .box--row1-col2 {
             background-image: url(../images/1-2.png);
             background-size: cover;
             margin: 1px;
         }
 
-        .b1-3 {
+        .box--row1-col3 {
             background-image: url(../images/1-3.png);
             background-size: cover;
             margin: 1px;
         }
 
-        .b1-4 {
+        .box--row1-col4 {
             background-image: url(../images/1-4.png);
             background-size: cover;
             margin: 1px 0 1px 1px;
         }
 
-        .b2-2 {
+        .box--row2-col2 {
             background-image: url(../images/2-2.png);
             background-size: cover;
             margin: 1px 1px 0 1px;
         }
 
-        .b2-3 {
+        .box--row2-col3 {
             background-image: url(../images/2-3.png);
             background-size: cover;
             margin: 1px 1px 0 1px;
         }
 
-        .b2-4 {
+        .box--row2-col4 {
             background-image: url(../images/2-4.png);
             background-size: cover;
             margin: 1px 0 0 1px;

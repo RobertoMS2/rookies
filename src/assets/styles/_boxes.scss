@@ -32,13 +32,13 @@
 .col-11-np { width: 91.66666666666666%; padding: 0px; }
 .col-12-np { width: 100%; padding: 0px; }
 
-.r-box              { position: relative; width: auto; }
-.r-box:before       { content: "";	display: block;	padding-top: 100%;}
-.r-box-1_1:before   { padding-top: 100%; }
-.r-box-2_1:before   { padding-top: 50%; }
-.r-box-3_2:before   { padding-top: 66.66666666666667%; }
-.r-box-1_2:before   { padding-top: 200%; }
-.r-box4_3:before    { padding-top: 75%; }
-.r-box-16_9:before  { padding-top: 56.25%; }
-.r-box-21_9:before  { padding-top: 42.85714285714286%; }
-.r-box-head:before  { padding-top: 75.43859649122807%; }
+.res-box              { position: relative; width: auto; }
+.res-box:before       { content: "";	display: block;	padding-top: 100%;}
+.res-box-1-1:before   { padding-top: 100%; }
+.res-box-2-1:before   { padding-top: 50%; }
+.res-box-3-2:before   { padding-top: 66.66666666666667%; }
+.res-box-1-2:before   { padding-top: 200%; }
+.res-box4-3:before    { padding-top: 75%; }
+.res-box-16-9:before  { padding-top: 56.25%; }
+.res-box-21-9:before  { padding-top: 42.85714285714286%; }
+.res-box-head:before  { padding-top: 75.43859649122807%; }
