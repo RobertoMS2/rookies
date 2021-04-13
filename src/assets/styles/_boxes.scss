@@ -1,0 +1,44 @@
+/* 
+ * Modelo de cajas basado en un grid de 12 columnas 
+ */
+.col    { float: left; padding: 0px 1.04167% 0 1.04167%; box-sizing: border-box; }
+.col-1  { width: 6.25%; }
+.col-2  { width: 14.58333333333333%; }
+.col-3  { width: 22.91666666666667%; }
+.col-4  { width: 31.25%; }
+.col-5  { width: 39.58333333333333%; }
+.col-6  { width: 47.91666666666667%; }
+.col-7  { width: 56.25%; }
+.col-8  { width: 64.58333333333333%; }
+.col-9  { width: 72.91666666666667%; }
+.col-10 { width: 81.25%; }
+.col-11 { width: 89.58333333333333%; }
+.col-12 { width: 97.91666666666667%; }
+
+/* 
+ * Versiones sin padding 
+ */
+.col-np    { box-sizing: border-box; }
+.col-1-np  { width: 8.333333333333332%; padding: 0px; }
+.col-2-np  { width: 16.66666666666666%; padding: 0px; }
+.col-3-np  { width: 24.99999999999999%; padding: 0px; }
+.col-4-np  { width: 33.33333333333333%; padding: 0px; }
+.col-5-np  { width: 41.66666666666666%; padding: 0px; }
+.col-6-np  { width: 50%; padding: 0px; }
+.col-7-np  { width: 58.33333333333333%; padding: 0px; }
+.col-8-np  { width: 66.66666666666666%; padding: 0px; }
+.col-9-np  { width: 74.99999999999999%; padding: 0px; }
+.col-10-np { width: 83.33333333333333%; padding: 0px; }
+.col-11-np { width: 91.66666666666666%; padding: 0px; }
+.col-12-np { width: 100%; padding: 0px; }
+
+.r-box              { position: relative; width: auto; }
+.r-box:before       { content: "";	display: block;	padding-top: 100%;}
+.r-box-1_1:before   { padding-top: 100%; }
+.r-box-2_1:before   { padding-top: 50%; }
+.r-box-3_2:before   { padding-top: 66.66666666666667%; }
+.r-box-1_2:before   { padding-top: 200%; }
+.r-box4_3:before    { padding-top: 75%; }
+.r-box-16_9:before  { padding-top: 56.25%; }
+.r-box-21_9:before  { padding-top: 42.85714285714286%; }
+.r-box-head:before  { padding-top: 75.43859649122807%; }

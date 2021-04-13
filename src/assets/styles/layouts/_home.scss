@@ -1,0 +1,192 @@
+@use '../base';
+
+/*
+ * Mixins
+ */
+// Crea una animación básica de transición para todos los navegadores
+@mixin addBasicTransition {
+  transition: $basic-transition;
+  -moz-transition: $basic-transition;
+  -webkit-transition: $basic-transition;
+  -o-transition: $basic-transition;
+}
+
+/*
+ * Modificaciones de colores para el body
+ */
+body {
+  background-color: $white-bg;
+  color: $primary-font;
+}
+
+h1, h2, h3, h4, h5 { color: $primary-font; }
+
+/* Sección de la banda. Presentación */
+.the-band__elem {
+  display: flex;
+  align-items: flex-end;
+
+  .picture {
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0 2rem 0 0;
+    position: relative;
+
+    h1{
+      top: 50%;
+      color: #968279;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: right;
+      position: absolute;
+      transform: translateY(-50%);
+      right: 10px;
+    }
+
+    span {
+      color: $primary-font;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .data {
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0 0 0 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Último disco y reproductor */
+.player {
+  display: flex;
+  align-items: center;
+
+  .player__elem {
+    width: 50%;
+    margin: 0 2rem;
+
+    .imagen {
+      @include addBasicTransition();
+      width: 60%;
+      border: 20px solid #f0efed;
+      margin: 0 auto;
+      position: relative;
+      box-shadow: 10px 10px 15px $brown-bg;
+      background-image: url(../images/portada-no-puedo-estar-mejor.jpg);
+      background-size: cover;
+    }
+
+    .el-jefe                      { background-image: url(../images/1-el-jefe.jpg); }
+    .el-desafio                   { background-image: url(../images/2-el-desafio.jpg); }
+    .despierta-ya                 { background-image: url(../images/3-despierta-ya.jpg); }
+    .no-puedo-estar-mejor         { background-image: url(../images/4-no-puedo-estar-mejor.jpg); }
+    .tu-cancion                   { background-image: url(../images/5-tu-cancion.jpg); }
+    .esta-en-ti                   { background-image: url(../images/6-esta-en-ti.jpg); }
+    .tienes-fuego                 { background-image: url(../images/7-tienes-fuego.jpg); }
+    .rookies                      { background-image: url(../images/8-rookies.jpg); }
+    .como-duele                   { background-image: url(../images/9-como-duele.jpg); }
+    .camaleones                   { background-image: url(../images/10-camaleones.jpg); }
+    .juguetes-rotos               { background-image: url(../images/11-juguetes-rotos.jpg); }
+    .me-estoy-muriendo-por-dentro { background-image: url(../images/12-me-estoy-muriendo-por-dentro.jpg); }
+    .las-de-ganar                 { background-image: url(../images/13-las-de-ganar.jpg); }
+    .heridas-de-guerra            { background-image: url(../images/14-heridas-de-guerra.jpg); }
+  }
+}
+
+.player-info {
+  display: flex;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+
+  .discografia {
+    width: 50%;
+    margin-right: 2rem;
+
+    .discografia__elem {
+      display: flex;
+      align-items: center;
+
+      h3 {
+        width: 40%;
+      }
+
+      h3::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $light-brown-bg;
+        display: block;
+        float: right;
+        top: 5px;
+        position: relative;
+      }
+
+      .year, .listen, .spotify {
+        width: 20%;
+        box-sizing: border-box;
+        margin: 0 1rem;
+      }
+
+      .year {
+        text-align: center;
+      }
+
+      .listen button {
+        border: 0;
+        background-color: $light-brown-bg;
+        padding: 0.5rem 1rem;
+        color: $brown-bg;
+        font-size: 1rem;
+        display: block;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+
+      .spotify a{
+        border: 0;
+        background-color: $brown-bg;
+        padding: 0.5rem 1rem;
+        color: $white-bg;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .ultimo-disco {
+    width: 50%;
+    margin-left: 2rem;
+
+    .ultimo-disco__elem {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 0;
+
+      .play-bt {
+        width: 5%;
+        color: $primary-font;
+      }
+
+      .song {
+        width: 80%;
+        color: $brown-bg;
+      }
+
+      .duration {
+        width: 15%;
+        color: $brown-bg;
+      }      
+    }
+
+    .ultimo-disco__elem:hover {
+      background-color: $light-brown-bg;
+      cursor: pointer;
+    }
+  }
+}

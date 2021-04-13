@@ -1,0 +1,17 @@
+/*
+ * Definición de las variables.
+ * Se dividen en fuentes básicas y colores.
+ */
+@use "sass:color";
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$primary-font: #281e1c;
+$secondary-font: #e5dcd7;
+
+$brown-bg: #968279;
+$light-brown-bg: #f0efed;
+$white-bg: #f8f8f8;
+
+$basic-transition: all 1s ease-in-out 0s;

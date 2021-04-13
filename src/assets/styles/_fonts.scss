@@ -1,0 +1,20 @@
+/**
+ * Definición de las fuentes del portal.
+ * Comfortaa: Encabezados principales.
+ * Raleway: Encabezados de secciones.
+ * Montserrat: Textos en general.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comfortaa', Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1rem 0;
+}
+
+.special-font {
+    font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
+}

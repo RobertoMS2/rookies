@@ -1,0 +1,23 @@
+/* Use this file to import partials.      */
+/* Do not include SCSS code in this file. */
+
+/* Import fonts */
+@import "fonts";
+
+/* Import variables */
+@import "variables";
+
+/* Import box model for columns */
+@import "boxes";
+
+// Import npm dependencies
+// see: https://v2.parceljs.org/features/module-resolution/
+// see commented examples below 
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+
+/* Import layouts */
+@import "layouts/home";
+
+/* Do NOT include anything else in this file! */

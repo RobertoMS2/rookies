@@ -1,0 +1,176 @@
+/*
+ * Estilos básicos de las etiquetas.
+ */
+ @import "variables";
+
+ @mixin basicBox {
+    max-width: 1360px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+ }
+
+ @mixin basicBoxBefore {
+    box-shadow: -20px 0 20px -20px #272727 inset;
+    content: " ";
+    height: 100%;
+    left: -20px;
+    position: absolute;
+    top: 0;
+    width: 20px;
+  }
+
+  @mixin basicBoxAfter {
+    box-shadow: 20px 0 20px -20px #272727 inset;
+    content: " ";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 20px;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+div, section, article { box-sizing: border-box; }
+  
+h1 { font-size: 3.5rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.2rem; }
+
+ul { margin: 0; padding: 0;}
+
+p { font-size: 1rem; }
+
+header {
+    background-color: $brown-bg;
+  
+    .header__elem {
+        @include basicBox();
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+
+        .b0-0 {
+            background-color: $brown-bg;
+        }
+
+        .b0-1 {
+            background-color: $light-brown-bg;
+        }
+
+        .b0-2 {
+            background-image: url(../images/0-2.png);
+            background-size: cover;
+            margin: 0 1px 1px 1px;
+        }
+
+        .b0-3 {
+            background-image: url(../images/0-3.png);
+            background-size: cover;
+            margin: 0 1px 1px 1px;
+        }
+
+        .b0-4 {
+            background-image: url(../images/0-4.png);
+            background-size: cover;
+            margin: 0 0 1px 1px;
+        }
+
+        .b1-0 {
+            background-image: url(../images/logo.png);
+            background-size: cover;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .b1-2 {
+            background-image: url(../images/1-2.png);
+            background-size: cover;
+            margin: 1px;
+        }
+
+        .b1-3 {
+            background-image: url(../images/1-3.png);
+            background-size: cover;
+            margin: 1px;
+        }
+
+        .b1-4 {
+            background-image: url(../images/1-4.png);
+            background-size: cover;
+            margin: 1px 0 1px 1px;
+        }
+
+        .b2-2 {
+            background-image: url(../images/2-2.png);
+            background-size: cover;
+            margin: 1px 1px 0 1px;
+        }
+
+        .b2-3 {
+            background-image: url(../images/2-3.png);
+            background-size: cover;
+            margin: 1px 1px 0 1px;
+        }
+
+        .b2-4 {
+            background-image: url(../images/2-4.png);
+            background-size: cover;
+            margin: 1px 0 0 1px;
+        }
+    }
+
+    .header__elem::before {
+        @include basicBoxBefore();
+    }
+
+    .header__elem::after {
+        @include basicBoxAfter();
+    }
+  }
+  
+  section {
+    background: $white-bg;
+  
+    .section__elem {
+        @include basicBox();
+        padding: 4rem 6rem 0 6rem;
+    }
+
+    .section__elem::before {
+        @include basicBoxBefore();
+    }
+
+    .section__elem::after {
+        @include basicBoxAfter();
+    }
+  }
+
+  section.different {
+    background: $light-brown-bg;
+  }
+  
+  footer {
+    background-color: $brown-bg;
+  
+    .footer__elem {
+        @include basicBox();
+        padding: 4rem 6rem 0 6rem;
+    }
+
+    .footer__elem::before {
+        @include basicBoxBefore();
+    }
+
+    .footer__elem::after {
+        @include basicBoxAfter();
+    }
+  }
