@@ -6,7 +6,7 @@
 window.changeSong = function changeSong(image, song) {
     var img = document.getElementById('current-song');
     var player = document.getElementById('player');
-    img.className = "r-box r-box-1_1 imagen ";
-    img.className = "r-box r-box-1_1 imagen " + image + " visible";
+    img.className = "res-box res-box-1-1 imagen ";
+    img.className = "res-box res-box-1-1 imagen " + image + " visible";
     player.setAttribute('src', 'https://open.spotify.com/embed/track/' + song);
 }

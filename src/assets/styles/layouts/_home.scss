@@ -190,3 +190,91 @@ h1, h2, h3, h4, h5 { color: $primary-font; }
     }
   }
 }
+
+/* Sección de eventos */
+.section__elem.the-tour {
+  padding-bottom: 3rem;
+
+  .the-tour__elem {
+    display: flex;
+    margin: 2rem 0;
+    align-items: center;
+
+    .date {
+      width: 150px;
+
+      time {
+        display: flex;
+        align-items: center;
+
+        .day {
+          width: 50%;
+          font-size: 3rem;
+          font-weight: bold;
+        }
+  
+        .month {
+          font-weight: bold;
+          display: block;
+        }
+  
+        .year {
+          font-weight: bold;
+          display: block;
+        }
+      }
+    }
+
+    .event {
+      width: 65%;
+      margin: 0;
+      border-bottom: 2px dotted;
+      padding: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .where {
+      width: 35%;
+      margin: 0;
+      border-bottom: 2px dotted;
+      padding: 0.5rem 0;
+      font-size: 1.2rem;
+      background-color: $brown-bg;
+      color: $secondary-font;
+      text-align: center;
+    }
+  }
+}
+
+/* Pié de la página */
+.footer__elem.contact {
+  padding-bottom: 20rem;
+  background-image: url(/src/assets/images/rockband.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 80%;
+
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .contact__elem {
+    text-align: center;
+  
+    p {
+      font-size: 2.5rem;
+      color: $secondary-font;
+      text-align: center;
+      margin: 0;
+    }
+  
+    a {
+      display: inline-block;
+      font-size: 3.5rem;
+      text-decoration: none;
+      padding: 2rem 1rem;
+      color: $primary-font;
+    }
+  }
+}
