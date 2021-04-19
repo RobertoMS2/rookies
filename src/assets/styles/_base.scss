@@ -119,12 +119,6 @@ header {
             background-image: url(../images/2-3.png);
             background-size: cover;
             margin: 1px 1px 0 1px;
-        }
-
-        .box--row2-col4 {
-            background-image: url(../images/2-4.png);
-            background-size: cover;
-            margin: 1px 0 0 1px;
 
             iframe {
                 top: 50%;
@@ -132,6 +126,12 @@ header {
                 transform: translateY(-50%);
                 left: 1rem;
             }
+        }
+
+        .box--row2-col4 {
+            background-image: url(../images/2-4.png);
+            background-size: cover;
+            margin: 1px 0 0 1px;
         }
     }
 
