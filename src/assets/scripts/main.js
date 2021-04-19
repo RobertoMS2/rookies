@@ -24,5 +24,15 @@
       header.classList.remove("sticky");
     }
   }
+
+  var menu = document.getElementById("menu");
+  menu.addEventListener('click', () => {
+    var h = document.getElementById("header");
+    if(!h.classList.contains("visible")) {
+      h.className = 'visible';
+    } else {
+      h.className = '';
+    }
+  });
 })();
 

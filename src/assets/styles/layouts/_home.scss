@@ -21,6 +21,55 @@ body {
 
 h1, h2, h3, h4, h5 { color: $primary-font; }
 
+/* Menú de navegación */
+#menu {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+  > a {
+    display: block;
+    width: 20%;
+    text-align: center;
+  }
+
+  img {
+    height: 3rem;
+  }
+
+  nav {
+    width: 80%;
+    text-align: right;
+
+    ul {
+      list-style: none;
+      display: flex;
+
+      a {
+        display: block;
+        margin-left: 2rem;
+        box-sizing: border-box;
+        color: $secondary-font;
+        text-decoration: none;
+        font-weight: bold;
+        @include addBasicTransition();
+      }
+
+      a:hover {
+        color: $primary-font;
+      }
+    }
+  }
+}
+
+
+
 /* Sección de la banda. Presentación */
 .the-band__elem {
   display: flex;
@@ -124,6 +173,10 @@ h1, h2, h3, h4, h5 { color: $primary-font; }
         float: right;
         top: 5px;
         position: relative;
+      }
+
+      svg {
+        display: none;
       }
 
       .year, .listen, .spotify {
@@ -276,5 +329,128 @@ h1, h2, h3, h4, h5 { color: $primary-font; }
       padding: 2rem 1rem;
       color: $primary-font;
     }
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  header .header__elem,
+  section .section__elem,
+  footer .footer__elem {
+    max-width: 960px;
+  }
+
+  header .header__elem .box--row2-col4 iframe {
+    width: 100%;
+  }
+
+  .player-info .discografia .discografia__elem svg {
+    display: block;
+  }
+
+  .discografia__elem button span,
+  .discografia__elem a span {
+    display: none;
+  }
+
+  .player-info .discografia .discografia__elem h3 {
+    width: 60%;
+  }
+
+  .player-info .discografia .discografia__elem .year, 
+  .player-info .discografia .discografia__elem .listen, 
+  .player-info .discografia .discografia__elem .spotify {
+    width: 15%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  header .header__elem,
+  section .section__elem,
+  footer .footer__elem {
+    max-width: 100%;
+  }
+
+  header .header__elem::before,
+  header .header__elem::after,
+  section .section__elem::before,
+  section .section__elem::after,
+  footer .footer__elem::before,
+  footer .footer__elem::after {
+    width: 0;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .the-band__elem,
+  .player,
+  .player-info {
+    flex-wrap: wrap;
+  }
+
+  .the-band__elem .picture,
+  .the-band__elem .data,
+  .player .player__elem,
+  .player-info .discografia,
+  .player-info .ultimo-disco {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #menu {
+    display: block;
+    width: auto;
+    color: $primary-font;
+  }
+
+  .nav > a {
+    width: 25%;
+  }
+
+  .nav nav {
+    width: 200px;
+    text-align: right;
+    position: fixed;
+    height: 100%;
+    background-color: $brown-bg;
+    z-index: 1;
+    z-index: 1;
+    top: 0;
+    left: -200px;
+    top: 4rem;
+    @include addBasicTransition();
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1rem 0;
+
+      li {
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+
+  .visible .nav nav {
+    left: 0px;
+  }
+
+  section .section__elem,
+  footer .footer__elem{
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .footer__elem.contact{
+    padding-bottom: 10rem;
+  }
+
+  .footer__elem.contact .contact__elem p {
+    font-size: 1.5rem;
   }
 }
