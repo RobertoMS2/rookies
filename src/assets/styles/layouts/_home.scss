@@ -68,8 +68,6 @@ h1, h2, h3, h4, h5 { color: $primary-font; }
   }
 }
 
-
-
 /* Sección de la banda. Presentación */
 .the-band__elem {
   display: flex;
@@ -418,8 +416,6 @@ h1, h2, h3, h4, h5 { color: $primary-font; }
     height: 100%;
     background-color: $brown-bg;
     z-index: 1;
-    z-index: 1;
-    top: 0;
     left: -200px;
     top: 4rem;
     @include addBasicTransition();
