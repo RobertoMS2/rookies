@@ -18,9 +18,9 @@
     position: absolute;
     top: 0;
     width: 20px;
-  }
+}
 
-  @mixin basicBoxAfter {
+@mixin basicBoxAfter {
     box-shadow: 20px 0 20px -20px #272727 inset;
     content: " ";
     height: 100%;
@@ -28,13 +28,25 @@
     top: 0;
     right: -20px;
     width: 20px;
-  }
+}
+
+// Crea una animación básica de transición para todos los navegadores
+@mixin addBasicTransition {
+    transition: $basic-transition;
+    -moz-transition: $basic-transition;
+    -webkit-transition: $basic-transition;
+    -o-transition: $basic-transition;
+}
 
 body {
+    background-color: $white-bg;
+    color: $primary-font;
     margin: 0;
     padding: 0;
     font-size: 16px;
 }
+  
+h1, h2, h3, h4, h5 { color: $primary-font; }
 
 div, section, article { box-sizing: border-box; }
   
@@ -45,6 +57,11 @@ h3 { font-size: 1.2rem; }
 ul { margin: 0; padding: 0;}
 
 p { font-size: 1rem; }
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
 
 header {
     background-color: $brown-bg;
@@ -149,7 +166,7 @@ header {
   
     .section__elem {
         @include basicBox();
-        padding: 4rem 6rem 0 6rem;
+        padding: 4rem 6rem 2rem 6rem;
     }
 
     .section__elem::before {
@@ -181,3 +198,45 @@ header {
         @include basicBoxAfter();
     }
   }
+
+  /*
+@media screen and (max-width: 700px) {
+  #menu {
+    display: block;
+    width: auto;
+    color: $primary-font;
+  }
+
+  .nav > a {
+    width: 25%;
+  }
+
+  .nav nav {
+    width: 200px;
+    text-align: right;
+    position: fixed;
+    height: 100%;
+    background-color: $brown-bg;
+    z-index: 1;
+    left: -200px;
+    top: 4rem;
+    @include addBasicTransition();
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1rem 0;
+
+      li {
+        width: 100%;
+        text-align: left;
+      }
+
+      a {
+        margin: 0.5rem 0 0 1.5rem;
+      }
+    }
+  }
+}
+*/

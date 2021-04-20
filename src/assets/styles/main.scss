@@ -17,7 +17,18 @@
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
+$navbar-light-color:                $secondary-font;
+$navbar-light-hover-color:          $primary-font;
+$navbar-light-active-color:         $primary-font;
+
+$table-variants: (
+  "primary":    $light-brown-bg
+);
+
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
 /* Import layouts */
 @import "layouts/home";
+@import "layouts/the-band";
 
 /* Do NOT include anything else in this file! */

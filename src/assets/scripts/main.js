@@ -5,6 +5,7 @@
 
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
+import * as bootstrap from 'bootstrap';
 
 /**
  * Write any other JavaScript below
@@ -26,13 +27,15 @@
   }
 
   var menu = document.getElementById("menu");
-  menu.addEventListener('click', () => {
-    var h = document.getElementById("header");
-    if(!h.classList.contains("visible")) {
-      h.className = 'visible';
-    } else {
-      h.className = '';
-    }
-  });
+  if(menu !== null) {
+    menu.addEventListener('click', () => {
+      var h = document.getElementById("header");
+      if(!h.classList.contains("visible")) {
+        h.className = 'visible';
+      } else {
+        h.className = '';
+      }
+    });
+  }
 })();
 

@@ -15,18 +15,32 @@
   <body>
     <header id="header">
       <div class="header__elem">
-        <div class="nav">
-          <a href="/"><img src="/src/assets/images/logo-small.png" alt="Logo de Rookies"></a>
-          <a href="#" title="Menú" id="menu"><i class="fas fa-bars"></i></a>
-          <nav>
-            <ul>
-              <li><a href="/">Inicio</a></li>
-              <li><a href="">La banda</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Contacto</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="/src/assets/images/logo-small.png" alt="Logo de Rookies" height="48">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="the-band.html">La banda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="events.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
       <div class="header__elem">
         <div class="box--row0-col0"></div>

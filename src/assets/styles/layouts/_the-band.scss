@@ -1,0 +1,29 @@
+@use '../base';
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .card {
+        width: 45% !important;
+        margin: 1rem auto;
+    }
+}
+
+img {
+    max-width: 100%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+div#accordionFlushRider, .table-responsive {
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 700px) {
+    .cards .card {
+        width: 90% !important;
+    }
+}
