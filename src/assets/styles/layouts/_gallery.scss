@@ -1,0 +1,36 @@
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .player {
+        width: 30%;
+        margin: 1rem auto;
+    
+        .player__elem {
+            padding-bottom: 56.25%;
+            position: relative;
+            width: 100%;
+            margin-bottom: 2em;
+        
+            iframe {
+                height: 100%;
+                margin-bottom: 1em;
+                margin-top: 0.5em;
+                position: absolute;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+.carousel-item {
+    height: 400px;
+
+    img {
+        height: 100% !important;
+        width: auto !important;
+        max-width: 100% !important;
+    }
+}
