@@ -186,26 +186,23 @@
 
     .date {
       width: 150px;
+      display: flex;
+      align-items: center;
 
-      time {
-        display: flex;
-        align-items: center;
+      .day {
+        width: 50%;
+        font-size: 3rem;
+        font-weight: bold;
+      }
 
-        .day {
-          width: 50%;
-          font-size: 3rem;
-          font-weight: bold;
-        }
-  
-        .month {
-          font-weight: bold;
-          display: block;
-        }
-  
-        .year {
-          font-weight: bold;
-          display: block;
-        }
+      .month {
+        font-weight: bold;
+        display: block;
+      }
+
+      .year {
+        font-weight: bold;
+        display: block;
       }
     }
 
