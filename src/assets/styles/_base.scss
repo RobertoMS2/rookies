@@ -159,11 +159,11 @@ header {
     .header__elem::after {
         @include basicBoxAfter();
     }
-  }
+}
   
-  section {
+section {
     background: $white-bg;
-  
+
     .section__elem {
         @include basicBox();
         padding: 4rem 6rem 2rem 6rem;
@@ -176,15 +176,15 @@ header {
     .section__elem::after {
         @include basicBoxAfter();
     }
-  }
+}
 
-  section.different {
+section.different {
     background: $light-brown-bg;
-  }
-  
-  footer {
+}
+
+footer {
     background-color: $brown-bg;
-  
+
     .footer__elem {
         @include basicBox();
         padding: 4rem 6rem 0 6rem;
@@ -197,7 +197,33 @@ header {
     .footer__elem::after {
         @include basicBoxAfter();
     }
-  }
+}
+
+@media screen and (max-width: 1460px) {
+    header .header__elem,
+    section .section__elem,
+    footer .footer__elem {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    header .header__elem,
+    section .section__elem,
+    footer .footer__elem {
+      max-width: 100%;
+    }
+  
+    header .header__elem::before,
+    header .header__elem::after,
+    section .section__elem::before,
+    section .section__elem::after,
+    footer .footer__elem::before,
+    footer .footer__elem::after {
+      width: 0;
+      display: none;
+    }
+}
 
 @media screen and (max-width: 600px) {
     section .section__elem,

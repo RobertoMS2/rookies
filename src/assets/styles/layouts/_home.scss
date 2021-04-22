@@ -264,12 +264,6 @@
 }
 
 @media screen and (max-width: 1460px) {
-  header .header__elem,
-  section .section__elem,
-  footer .footer__elem {
-    max-width: 960px;
-  }
-
   header .header__elem .box--row2-col3 iframe {
     width: 100%;
   }
@@ -292,24 +286,6 @@
   .player-info .discografia .discografia__elem .spotify {
     width: 15%;
     margin: 0;
-  }
-}
-
-@media screen and (max-width: 1060px) {
-  header .header__elem,
-  section .section__elem,
-  footer .footer__elem {
-    max-width: 100%;
-  }
-
-  header .header__elem::before,
-  header .header__elem::after,
-  section .section__elem::before,
-  section .section__elem::after,
-  footer .footer__elem::before,
-  footer .footer__elem::after {
-    width: 0;
-    display: none;
   }
 }
 
