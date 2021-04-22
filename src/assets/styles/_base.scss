@@ -199,44 +199,9 @@ header {
     }
   }
 
-  /*
-@media screen and (max-width: 700px) {
-  #menu {
-    display: block;
-    width: auto;
-    color: $primary-font;
-  }
-
-  .nav > a {
-    width: 25%;
-  }
-
-  .nav nav {
-    width: 200px;
-    text-align: right;
-    position: fixed;
-    height: 100%;
-    background-color: $brown-bg;
-    z-index: 1;
-    left: -200px;
-    top: 4rem;
-    @include addBasicTransition();
-
-    ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 1rem 0;
-
-      li {
-        width: 100%;
-        text-align: left;
-      }
-
-      a {
-        margin: 0.5rem 0 0 1.5rem;
-      }
+@media screen and (max-width: 600px) {
+    section .section__elem,
+    footer .footer__elem {
+        padding: 4rem 2rem 2rem 2rem;
     }
-  }
 }
-*/

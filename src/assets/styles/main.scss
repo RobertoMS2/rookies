@@ -17,13 +17,26 @@
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
+/* Menú de navegació */
 $navbar-light-color:                $secondary-font;
 $navbar-light-hover-color:          $primary-font;
 $navbar-light-active-color:         $primary-font;
 
+/* variaciones de color de las tablas */
 $table-variants: (
   "primary":    $light-brown-bg
 );
+
+/* Acordeón */
+$accordion-button-color: $primary-font;
+$accordion-button-bg: $light-brown-bg;
+$accordion-button-active-bg: tint-color($brown-bg, 90%);
+$accordion-button-active-color: shade-color($primary-font, 10%);
+$accordion-button-focus-border-color: $brown-bg;
+$accordion-button-focus-box-shadow: 0 0 0 0.25rem $brown-bg;
+
+/* Carrousel */
+$carousel-control-color: $brown-bg;
 
 @import "/node_modules/bootstrap/scss/bootstrap.scss";
 
